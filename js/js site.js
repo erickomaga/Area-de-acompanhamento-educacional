@@ -1,17 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-    const botoesEscola = document.querySelectorAll('.escola-botao');
-
-    botoesEscola.forEach(botao => {
-        botao.addEventListener('click', (event) => {
-        
-            event.preventDefault(); 
-            
-            const nomeEscola = event.target.textContent;
-            
-            alert(`Você clicou na ${nomeEscola}. \n(Esta ação pode ser personalizada)`);
-        });
-    });
     const navLinks = document.querySelectorAll('nav a[href^="#"]');
 
     navLinks.forEach(link => {
