@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="refresh" content="60">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/css login.css">
+    <link rel="icon" type="favicon/x-icon" href="Imgs/FavIcons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="Img/FavIcons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Img/FavIcons/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Img/FavIcons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Img/FavIcons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="Img/FavIcons/android-chrome-512x512.png">
+</head>
+
+<body>
+  <div class="container">
+    <div class="page">
+      <div class="logo">
+        <img src="Imgs/LOGO MAKER horizontal.png" alt="Maker" style="width: 175px;">
+      </div>
+      <br />
+      <form id="loginForm" class="container" method="post">
+        <input type="text" id="username" placeholder="Nome de Usuário" name="u_name" required>
+        <input type="password" id="password" placeholder="Senha" name="pass" required>
+        <button type="submit">Enviar</button>
+        <div class="option">OU</div>
+      </form>
+      <div class="singup">
+        <a href="https://www.instagram.com/accounts/emailsignup/">Precisa de Ajuda?</a>
+      </div>
+    </div>
+  </div>
+  <script src="js/js login.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Auth.attachFormListener('loginForm', 'username', 'password', 'site.html');
+    });
+  </script>
+</body>
+</html>
