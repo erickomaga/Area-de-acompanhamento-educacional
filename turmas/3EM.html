@@ -1,1 +1,111 @@
-3 em
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Educacional - Maker Brasil</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Imgs/FavIcons/favicon.ico">
+</head>
+<body>
+
+    <header id="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="Data/Imgs/LOGO MAKER horizontal.png" alt="Logo Maker Brasil">
+            </a>
+            <nav>
+                <a href="#apresentacao">Início</a>
+                <a href="#videos">Aulas</a>
+                <a href="#pdf">Materiais</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Recursos Maker Brasil</h1>
+            <p>Conteúdo exclusivo para impulsionar seu aprendizado prático</p>
+        </div>
+    </section>
+
+    <div class="container">
+        
+        <section id="apresentacao">
+            <div class="apresentacao-flex">
+                <div class="video-shorts-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/ID_DO_SHORTS" 
+                        title="Vídeo de Apresentação" 
+                        frameborder="0" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="texto-apresentacao">
+                    <h2>Vídeo de Apresentação</h2>
+                    <p>Descrição personalizada para esta turma aqui.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="videos">
+            <h2>Aulas em Vídeo</h2>
+            <div class="video-grid">
+                
+                <div class="video-card">
+                    <h3>Aula 1: TÍTULO_AULA_1</h3>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/ID_AULA_1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <h3>Aula 2: TÍTULO_AULA_2</h3>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/ID_AULA_2" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <h3>Aula 3: TÍTULO_AULA_3</h3>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/ID_AULA_3" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="pdf">
+            <h2>Materiais para Download</h2>
+            <div class="download-list">
+                <a href="Data/Pdf/ANO/Aula 1.pdf" class="download-link" download>
+                    Download: Manual de Montagem - Aula 1
+                </a>
+                <a href="Data/Pdf/ANO/Aula 2.pdf" class="download-link" download>
+                    Download: Manual de Montagem - Aula 2
+                </a>
+                <a href="Data/Pdf/ANO/Aula 3.pdf" class="download-link" download>
+                    Download: Manual de Montagem - Aula 3
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Maker Brasil. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/js plataforma.js"></script>
+</body>
+</html>

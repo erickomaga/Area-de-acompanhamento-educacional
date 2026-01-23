@@ -1,0 +1,199 @@
+/* RESET E DEFINIÇÕES GERAIS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+#header {
+  background-color: #ffffff;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .logo img {
+  max-height: 50px;
+}
+
+#header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #0056b3;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(to right, #0056b3, #007bff);
+  color: #ffffff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/* SEÇÃO APRESENTAÇÃO (SHORTS) */
+#apresentacao {
+  padding: 4rem 0;
+}
+
+.apresentacao-flex {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* Estilo para simular formato de Shorts Vertical */
+.video-shorts-container {
+  flex: 0 0 280px;
+  aspect-ratio: 9 / 16;
+}
+
+.video-shorts-container iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.texto-apresentacao {
+  flex: 1;
+}
+
+.texto-apresentacao h2 {
+  font-size: 2.2rem;
+  color: #0056b3;
+  margin-bottom: 1.5rem;
+}
+
+/* SEÇÃO AULAS (YOUTUBE RESPONSIVO) */
+#videos {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.video-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.video-card h3 {
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* Container para manter a proporção 16:9 dos vídeos do YouTube */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* SEÇÃO PDF */
+#pdf {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.download-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 1rem;
+}
+
+.download-link {
+  display: block;
+  background-color: #0056b3;
+  color: #ffffff;
+  border: 2px solid #0056b3;
+  width: 100%;
+  max-width: 600px; 
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.download-link:hover {
+  background-color: #ffffff;
+  color: #0056b3;
+  transform: translateY(-3px);
+}
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+  .apresentacao-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  .video-shorts-container {
+    width: 250px;
+    margin: 0 auto;
+  }
+}
