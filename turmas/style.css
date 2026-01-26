@@ -79,17 +79,35 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-/* Estilo para simular formato de Shorts Vertical */
+/* Estilo para simular formato de Shorts Vertical usando TAG <a> */
 .video-shorts-container {
   flex: 0 0 280px;
   aspect-ratio: 9 / 16;
 }
 
-.video-shorts-container iframe {
+.video-shorts-container a {
+  display: flex;
   width: 100%;
   height: 100%;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  background: #222 url('https://img.youtube.com/vi/mMPkKoENCFM/maxresdefault.jpg') center/cover no-repeat;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.video-shorts-container a:hover {
+  transform: scale(1.02);
+}
+
+/* Ícone de Play para o Shorts */
+.video-shorts-container a::after {
+  content: '▶';
+  font-size: 60px;
+  color: white;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
 .texto-apresentacao {
@@ -102,7 +120,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* SEÇÃO AULAS (YOUTUBE RESPONSIVO) */
+/* SEÇÃO AULAS (YOUTUBE RESPONSIVO COM TAG <a>) */
 #videos {
   padding: 4rem 0;
   text-align: center;
@@ -127,22 +145,48 @@ body {
   color: #333;
 }
 
-/* Container para manter a proporção 16:9 dos vídeos do YouTube */
+/* Container para manter a proporção 16:9 */
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
   overflow: hidden;
   border-radius: 8px;
+  background-color: #000;
 }
 
-.video-wrapper iframe {
+/* Estilo para a TAG <a> se comportar como o vídeo */
+.video-wrapper a {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #333;
+  transition: background 0.3s ease;
+}
+
+.video-wrapper a:hover {
+  background-color: #444;
+}
+
+/* Botão visual de "Assistir Aula" */
+.video-wrapper a::before {
+  content: '▶ Assistir Aula';
+  padding: 12px 24px;
+  background: #0056b3;
+  color: white;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: background 0.3s ease;
+}
+
+.video-wrapper a:hover::before {
+  background: #007bff;
 }
 
 /* SEÇÃO PDF */
