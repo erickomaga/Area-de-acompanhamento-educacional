@@ -241,3 +241,30 @@ footer {
     margin: 0 auto;
   }
 }
+
+.pdf-toggle {
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pdf-toggle:hover {
+  background-color: #007bff;
+}
+
+.pdf-container {
+  display: none;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}

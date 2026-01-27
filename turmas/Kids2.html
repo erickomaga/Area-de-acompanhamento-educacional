@@ -4,111 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plataforma Educacional - Maker Brasil</title>
-    
+
     <link rel="stylesheet" href="style.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="icon" type="image/x-icon" href="Imgs/FavIcons/favicon.ico">
+
+    <style>
+        .pdf-container {
+            display: none;
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
 
-    <header id="header">
-        <div class="container">
-            <a href="#" class="logo">
-                <img src="Data/Imgs/LOGO MAKER horizontal.png" alt="Logo Maker Brasil">
-            </a>
-            <nav>
-                <a href="#apresentacao">Início</a>
-                <a href="#videos">Aulas</a>
-                <a href="#pdf">Materiais</a>
-            </nav>
-        </div>
-    </header>
+<header id="header">
+    <div class="container">
+        <a href="#" class="logo">
+            <img src="Data/Imgs/LOGO MAKER horizontal.png" alt="Logo Maker Brasil">
+        </a>
+        <nav>
+            <a href="#apresentacao">Início</a>
+            <a href="#videos">Aulas</a>
+            <a href="#pdf">Materiais</a>
+        </nav>
+    </div>
+</header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Recursos Maker Brasil</h1>
-            <p>Conteúdo exclusivo para impulsionar seu aprendizado prático</p>
+<section class="hero">
+    <div class="container">
+        <h1>Recursos Maker Brasil</h1>
+        <p>Conteúdo exclusivo para impulsionar seu aprendizado prático</p>
+    </div>
+</section>
+
+<div class="container">
+
+    <!-- APRESENTAÇÃO -->
+    <section id="apresentacao">
+        <div class="apresentacao-flex">
+            <div class="video-shorts-container">
+                <a href="https://youtube.com/shorts/POAQF1pbcQw?feature=share" allowfullscreen></a>
+            </div>
+            <div class="texto-apresentacao">
+                <h2>Vídeo de Apresentação</h2>
+                <p>
+                    Seja bem-vindo à nossa plataforma! Neste vídeo rápido, apresentamos a pessoa selecionada pela sua turma.
+                    Nosso foco é o aprendizado <strong>"mão na massa"</strong>. Explore as aulas abaixo e utilize os guias em PDF para reforçar seus projetos.
+                </p>
+            </div>
         </div>
     </section>
 
-    <div class="container">
-        
-        <section id="apresentacao">
-            <div class="apresentacao-flex">
-                <div class="video-shorts-container">
-                    <a
-                        href="https://youtube.com/shorts/POAQF1pbcQw?feature=share" 
-                        title="Vídeo de Apresentação" 
-                        frameborder="0" 
-                        allowfullscreen>
-                    </a>
-                </div>
-                <div class="texto-apresentacao">
-                    <h2>Vídeo de Apresentação</h2>
-                    <p>Seja bem-vindo à nossa plataforma! Neste vídeo rápido, apresentamos a pessoa selecionada pela sua turma.
-Nosso foco é o aprendizado "mão na massa". Explore as aulas abaixo e utilize os guias em PDF para reforçar seus projetos..</p>
+    <hr>
+
+    <!-- VÍDEOS -->
+    <section id="videos">
+        <h2>Aulas em Vídeo</h2>
+        <div class="video-grid">
+
+            <div class="video-card">
+                <h3>Aula 1</h3>
+                <div class="video-wrapper">
+                    <a href="https://youtu.be/y624VFdXa7g"></a>
                 </div>
             </div>
-        </section>
 
-        <hr>
-
-        <section id="videos">
-            <h2>Aulas em Vídeo</h2>
-            <div class="video-grid">
-                
-                <div class="video-card">
-                    <h3>Aula 1:</h3>
-                    <div class="video-wrapper">
-                        <a href="https://youtu.be/y624VFdXa7g" frameborder="0" allowfullscreen></a>
-                    </div>
+            <div class="video-card">
+                <h3>Aula 2</h3>
+                <div class="video-wrapper">
+                    <a href="https://youtu.be/3HGUHPwneL4"></a>
                 </div>
-
-                <div class="video-card">
-                    <h3>Aula 2:</h3>
-                    <div class="video-wrapper">
-                        <a href="https://youtu.be/3HGUHPwneL4" frameborder="0" allowfullscreen></a>
-                    </div>
-                </div>
-
-                <div class="video-card">
-                    <h3>Aula 3:/h3>
-                    <div class="video-wrapper">
-                        <a href="https://youtu.be/-XdepuDytjk" frameborder="0" allowfullscreen></a>
-                    </div>
-                </div>
-
             </div>
-        </section>
 
-        <section id="pdf">
-            <h2>Materiais para Download</h2>
-            <div class="download-list">
-                <a href="Data/Pdf/Kids 2/Aula 1.pdf" class="download-link" download>
-                    Download: Manual de Montagem - Aula 1
-                </a>
-                <a href="Data/Pdf/Kids 2/Aula 2.pdf" class="download-link" download>
-                    Download: Manual de Montagem - Aula 2
-                </a>
-                <a href="Data/Pdf/Kids 2/aula 3.pdf" class="download-link" download>
-                    Download: Manual de Montagem - Aula 3
-                </a>
+            <div class="video-card">
+                <h3>Aula 3</h3>
+                <div class="video-wrapper">
+                    <a href="https://youtu.be/-XdepuDytjk"></a>
+                </div>
             </div>
-        </section>
 
-    </div>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Maker Brasil. Todos os direitos reservados.</p>
         </div>
-    </footer>
+    </section>
 
-    <script src="js/js plataforma.js"></script>
+    <!-- PDF INLINE (PADRÃO CORRETO) -->
+    <section id="pdf">
+        <h2>Materiais Didáticos</h2>
+        <p>Clique nos botões abaixo para visualizar os materiais de cada aula.</p>
+
+        <button class="pdf-toggle" onclick="togglePDF('pdf1')">
+            📄 Aula 1 – Manual de Montagem
+        </button>
+        <div id="pdf1" class="pdf-container">
+            <iframe src="Data/Pdf/Kids 2/Aula 1.pdf#toolbar=0&navpanes=0"
+                    width="100%" height="700px"></iframe>
+        </div>
+
+        <button class="pdf-toggle" onclick="togglePDF('pdf2')">
+            📄 Aula 2 – Manual de Montagem
+        </button>
+        <div id="pdf2" class="pdf-container">
+            <iframe src="Data/Pdf/Kids 2/Aula 2.pdf#toolbar=0&navpanes=0"
+                    width="100%" height="700px"></iframe>
+        </div>
+
+        <button class="pdf-toggle" onclick="togglePDF('pdf3')">
+            📄 Aula 3 – Manual de Montagem
+        </button>
+        <div id="pdf3" class="pdf-container">
+            <iframe src="Data/Pdf/Kids 2/Aula 3.pdf#toolbar=0&navpanes=0"
+                    width="100%" height="700px"></iframe>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Maker Brasil. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script>
+function togglePDF(id) {
+    const pdf = document.getElementById(id);
+    pdf.style.display = (pdf.style.display === 'block') ? 'none' : 'block';
+}
+</script>
+
 </body>
-
 </html>
-
