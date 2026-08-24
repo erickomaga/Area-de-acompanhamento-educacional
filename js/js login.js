@@ -2,21 +2,7 @@
   'use strict';
 
   const USERS = {
-    'maker09': 'maker123',
-    'cadmus09': 'cadmus123',
-    'aurora01': 'aurora123',
-    'luna02': 'luna123',
-    'atlas03': 'atlas123',
-    'solis04': 'solis123',
-    'nimbus05': 'nimbus123',
-    'orion06': 'orion123',
-    'nova07': 'nova123',
-    'eclipse08': 'eclipse123',
-    'oito': 'oito123',
-    'vulcan10': 'vulcan123',
-    'zephyr11': 'zephyr123',
-    'phoenix12': 'phoenix123',
-    'onyx13': 'onyx123'
+    'maker09': 'maker123'
   };
 
   /**
